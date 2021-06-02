@@ -1,11 +1,15 @@
     
   *{
     margin: 3px;
+    padding: 2%;
   } 
   .main{
+     
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: none;
     padding: 20px 10px;
+    
+    
   }
   
   .main a {
@@ -17,7 +21,8 @@
     font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
-    position:relative
+    position: sticky;
+    /* position:relative; */
   }
   
   .main a::after{
@@ -48,12 +53,19 @@
   }
   
   .nav {
-    float: right;
+   display: flex;
+   float: right;
+   
+   
   }
   .logo{
-      padding:none;
+      /* padding:none;
       height:10vh;
-    float:left;
+    float:left; */
+    width: 200Px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
     
   }
   .logo:hover
@@ -61,7 +73,7 @@
     background-color: #ddd;
     color: black;
     width:20%;
-    height: 20%;
+    /* height: 20%; */
   }
   
   @media screen and (max-width: 500px) {
@@ -73,18 +85,25 @@
   
     
     .nav {
-      float: none;
+     display: flex;
+     flex-wrap:wrap-reverse ;
+     
     }
+  
   }
-
+     
 
     .main{
-        background-color: #ccc;
+        /* background-color: #ccc; */
+  
      }
   .content1{
+
       background-color: aliceblue;
       margin: 40px;
       padding: 2vh;
+      
+    
     }
    .content1 p{
         font-family: 'Sigmar One', cursive;
@@ -101,7 +120,7 @@
         height: 20%;
     }
 
-
+  
     /* video section */
     .video{
       display: flexbox;
@@ -121,7 +140,7 @@
         font-size: 40px;
     }
 
-
+  
 
 
 
@@ -159,6 +178,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 footer{
   width: 100%;
+  height: auto;
   position:unset;
   bottom: 0;
   left: 0;
@@ -228,7 +248,7 @@ footer .content .r input[type="submit"]{
 }
 .content .r input[type="submit"]:hover{
   background: none;
-  color:  #eb2f06;
+  color:  #2ceb06;
 }
 footer .content .media-icons a{
   font-size: 16px;
@@ -243,16 +263,16 @@ footer .content .media-icons a{
   transition: all 0.3s ease;
 }
 .content .media-icons a:hover{
-  border-color: #eb2f06;
+  border-color: #06eb12;
 }
 footer .bottom{
   width: 100%;
   text-align: right;
-  color: #b66161;
+  color: #50c4d3;
   padding: 0 40px 5px 0;
 }
 footer .bottom a{
-  color: #eb2f06;
+  color: #e0b9b0;
 }
 footer a{
   transition: all 0.3s ease;
