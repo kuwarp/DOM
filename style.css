@@ -42,7 +42,7 @@
   }
   
   .main a:hover::after{
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: black;
     width:100%
   }
@@ -68,21 +68,24 @@
     transition-timing-function: ease-in;
     
   }
+  
+  
   .logo:hover
   {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: black;
     width:20%;
     /* height: 20%; */
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     .main a {
       float: none;
-      display: block;
+      display:inline-block;
       text-align: left;
     }
   
+
     
     .nav {
      display: flex;
@@ -93,10 +96,10 @@
   }
      
 
-    .main{
-        /* background-color: #ccc; */
+    /* .main{
+         background-color: #ccc; 
   
-     }
+     } */
   .content1{
 
       background-color: aliceblue;
